@@ -3,6 +3,7 @@
 
 ## Design das Telas - Figma: 
 
+https://www.figma.com/design/BcMlgCpuF0Yaan4TPKtu0a/stardew-shop?node-id=22-1193&m=dev&t=DN0XnoUnF0AS1muL-1
 
 ## Design System: 
 
