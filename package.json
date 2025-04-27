@@ -1,0 +1,20 @@
+{
+  "name": "stardew-shop",
+  "version": "1.0.0",
+  "description": "https://www.figma.com/design/BcMlgCpuF0Yaan4TPKtu0a/stardew-shop?node-id=22-1193&m=dev&t=DN0XnoUnF0AS1muL-1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "xyz": "^5.0.0"
+  },
+  "devDependencies": {
+    "abc": "^0.6.1",
+    "gh-pages": "^6.3.0"
+  }
+}
