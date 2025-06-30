@@ -1,3 +1,14 @@
+// Código jQuery para máscara de telefone e animação fadeIn
+$(document).ready(function () {
+    // Aplica a máscara ao campo de telefone
+    $('#phone').mask('(00) 00000-0000');
+
+    // Animação de fadeIn no card de cadastro
+    $('.card').hide().fadeIn(1000);
+});
+
+
+// Código principal em JavaScript puro (Materialize e validações)
 document.addEventListener('DOMContentLoaded', function() {
     const cadastroForm = document.getElementById('cadastroForm');
     const fullNameInput = document.getElementById('fullName');
@@ -7,10 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmPasswordInput = document.getElementById('confirmPassword');
     const termsAcceptedCheckbox = document.getElementById('termsAccepted');
 
-    
     M.updateTextFields();
 
-    // validação de formulário com api html e regex
+    // Validação do nome completo
     fullNameInput.addEventListener('input', function() {
         if (fullNameInput.validity.valid) {
             fullNameInput.classList.remove('invalid');
@@ -21,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // validação de telefone com regex
+    // Validação adicional de telefone (a máscara já garante o formato)
     phoneInput.addEventListener('input', function() {
-        // regex para formatos (xx) xxxx-xxxx, (xx) xxxx-xxxx ou xxxxxxxxxxx
         const phoneRegex = /^(\(\d{2}\)\s?\d{4,5}-\d{4}|\d{10,11})$/;
         if (phoneRegex.test(phoneInput.value)) {
             phoneInput.classList.remove('invalid');
@@ -34,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // validação de email com regex
+    // Validação de e-mail
     emailInput.addEventListener('input', function() {
         if (emailInput.validity.valid) {
             emailInput.classList.remove('invalid');
@@ -45,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // validação de senha
+    // Validação da senha
     passwordInput.addEventListener('input', function() {
         if (passwordInput.validity.valid) {
             passwordInput.classList.remove('invalid');
@@ -54,11 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
             passwordInput.classList.remove('valid');
             passwordInput.classList.add('invalid');
         }
-        // verifica a confirmação da senha
         validateConfirmPassword();
     });
 
-    // validação confirmação de senha
+    // Validação da confirmação de senha
     confirmPasswordInput.addEventListener('input', validateConfirmPassword);
 
     function validateConfirmPassword() {
@@ -71,18 +79,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // tratamento do formulário no submit
+    // Submissão do formulário
     cadastroForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // impede o envio padrão do formulário
+        event.preventDefault();
 
-        // garante os campos obrigatórios sejam validados e checados
         const isFormValid = cadastroForm.checkValidity() &&
                             phoneInput.classList.contains('valid') &&
                             confirmPasswordInput.classList.contains('valid') &&
                             termsAcceptedCheckbox.checked;
 
         if (isFormValid) {
-            // dados no web storage
             const userData = {
                 fullName: fullNameInput.value,
                 phone: phoneInput.value,
@@ -97,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = '../login/login.html';
         } else {
             alert('Por favor, preencha todos os campos corretamente e aceite os termos.');
-        
         }
     });
 

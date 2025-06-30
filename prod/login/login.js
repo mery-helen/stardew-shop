@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', function() {
         emailInput.value = savedEmail;
         rememberMeCheckbox.checked = true;
         M.updateTextFields();
-        emailInput.classList.add('valid'); 
+        emailInput.classList.add('valid');
+    } 
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -58,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         localStorage.removeItem('rememberedEmail');
                     }
 
-                    window.location.href = '../index.html';
+                    window.location.href = '../index.html'; 
+        
                 } else {
                     alert('Email ou senha inválidos. Por favor, tente novamente.');
                     emailInput.classList.remove('valid');
@@ -80,4 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.removeItem('rememberedEmail'); // remove o email salvo se desmarcar
         }
     });
-}});
+});
