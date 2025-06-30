@@ -8,7 +8,11 @@ https://www.figma.com/design/BcMlgCpuF0Yaan4TPKtu0a/stardew-shop?node-id=22-1193
 ## Design System: 
 
 
-## Site em Produção - GitHub Pages
+Stardew Shop é uma loja virtual fictícia inspirada no universo do jogo Stardew Valley. O projeto foi desenvolvido como atividade prática para a disciplina de Web 2, com o objetivo de aplicar conhecimentos de HTML, CSS, JavaScript e uso de frameworks.
+
+O site permite que usuários se cadastrem, façam login, naveguem por produtos organizados em cards, adicionem itens ao carrinho, ajustem quantidades e finalizem a compra com preenchimento de endereço. Todos os dados são armazenados e manipulados no navegador utilizando o Web Storage (localStorage). Também foi utilizado o JSON Server para simular uma API de produtos.
+
+Além da funcionalidade, o projeto foi pensado com um design responsivo, adaptável para desktop e dispositivos móveis, utilizando o framework Materialize CSS e técnicas modernas de responsividade como clamp() para tipografia e Flexbox.
 
 
 ## Framework CSS
