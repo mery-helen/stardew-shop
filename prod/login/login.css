@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #F6EEDB;
+    min-height: 100%; 
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'VT323', monospace;
+    font-size: medium;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-title {
+    color: #104380;
+    font-weight: bold;
+}
+
+.login-box {
+    background-color: #FCD688;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #104380 !important;
+}
+
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #104380 !important;
+    box-shadow: 0 1px 0 0 #104380 !important;
+}
+
+.btn-enviar {
+    background-color: #4A9030 !important;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'VT323', monospace;
+}
+
+.btn-cadastrar {
+    background-color: #97B9D6 !important;
+    color: #104380 !important;
+    width: 100%;
+}
+
+.recover-password {
+    margin-top: 25px;
+    text-align: center;
+    color: #B66C3F;
+}

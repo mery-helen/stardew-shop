@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stardew Shop</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/libraries/materialize-v1.0.0(1)/materialize/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="style-index.css" />
+  </head>
+
+  <body>
+    <header class="navbar blue-grey lighten-5">
+      <div class="navbar-fixed">
+        <nav class="navbar blue-grey lighten-5">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">
+                <img
+                  src="../assets/resources/images/logo.jpeg"
+                  alt="Logo"
+                  class="logo-img"
+                />
+              </a>
+
+              <a
+                href="#"
+                data-target="mobile-menu"
+                class="sidenav-trigger right"
+              >
+                <i class="material-icons black-text">menu</i>
+              </a>
+
+              <div class="search-bar hide-on-small-and-down">
+                <div class="input-field">
+                  <input
+                    id="search"
+                    type="search"
+                    placeholder="O que você procura?"
+                    required
+                  />
+                </div>
+              </div>
+
+              <ul class="right hide-on-small-and-down nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="login/login.html"><span class="iconify" data-icon="pixelarticons:login"></span> Login</a></li>
+                <li><a href="cart/cart.html"><span class="iconify" data-icon="pixelarticons:cart"></span> Carrinho</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="search-bar hide-on-med-and-up">
+            <div class="input-field">
+              <input
+                id="search-mobile"
+                type="search"
+                placeholder="O que você procura?"
+                required
+              />
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav" id="mobile-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="login/login.html"><span class="iconify" data-icon="pixelarticons:login"></span> Login</a></li>
+        <li><a href="cart/cart.html"><span class="iconify" data-icon="pixelarticons:cart"></span> Carrinho</a></li>
+      </ul>
+    </header>
+
+    <section class="banner">
+      <img
+        src="../assets/resources/images/header/header.png"
+        alt="Header"
+        class="header-img"
+      />
+    </section>
+
+    <section class="categories-section">
+      <ul class="categories">
+        <li data-category="all" style="cursor: pointer;">
+          <span class="iconify" data-icon="pixelarticons:list"></span> Todos
+        </li>
+        <li>
+          <button
+            class="btn"
+            data-category="primavera"
+            style="background-color: #fcd688; color: black"
+          >
+            Primavera
+          </button>
+        </li>
+
+        <li>
+          <button
+            class="btn"
+            data-category="verao"
+            style="background-color: #b66c3f"
+          >
+            Verão
+          </button>
+        </li>
+
+        <li>
+          <button
+            class="btn"
+            data-category="outono"
+            style="background-color: #104380"
+          >
+            Outono
+          </button>
+        </li>
+
+        <li>
+          <button
+            class="btn"
+            data-category="inverno"
+            style="background-color: #97b9d6; color: black"
+          >
+            Inverno
+          </button>
+        </li>
+
+        <li>
+          <button
+            class="btn"
+            data-category="especiais"
+            style="background-color: #4a9030"
+          >
+            Especiais
+          </button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="products container">
+      <h3>Varejo</h3>
+      <div class="products-grid-wrapper" id="products-grid">
+        <div class="row">
+          <p
+            id="no-products-message"
+            style="
+              display: none;
+              text-align: center;
+              color: #b66c3f;
+              font-size: 1.2em;
+              width: 100%;
+            "
+          >
+            Nenhum produto encontrado. Tente outra busca!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="../assets/libraries/materialize-v1.0.0(1)/materialize/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

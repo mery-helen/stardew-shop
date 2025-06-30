@@ -1,0 +1,89 @@
+body {
+    background-color: #F6EEDB; 
+    color: #104380; 
+    font-family: 'VT323', monospace; 
+    font-size: 1.1em; 
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #FCD688; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    color: #B66C3F; 
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.input-field label {
+    color: #104380; 
+    font-size: 1.1em;
+}
+
+.input-field input[type=text]:focus + label,
+.input-field input[type=tel]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label {
+    color: #B66C3F !important; 
+}
+
+.input-field input[type=text]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+    border-bottom: 1px solid #B66C3F !important; 
+    box-shadow: 0 1px 0 0 #B66C3F !important;
+}
+
+.input-field input.valid {
+    border-bottom: 1px solid #4A9030 !important; 
+    box-shadow: 0 1px 0 0 #4A9030 !important;
+}
+
+.input-field input.invalid {
+    border-bottom: 1px solid #B66C3F !important;
+    box-shadow: 0 1px 0 0 #B66C3F !important;
+}
+
+.helper-text {
+    font-size: 0.9em;
+    font-weight: normal;
+    font-family: 'VT323', monospace;
+}
+.helper-text[data-error] {
+    color: #B66C3F; 
+}
+.helper-text[data-success] {
+    color: #4A9030; 
+}
+
+
+[type="checkbox"] + span:not(.lever) {
+    color: #104380; 
+    font-size: 1.1em;
+    font-family: 'VT323', monospace;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+    border-right: 2px solid #4A9030; 
+    border-bottom: 2px solid #4A9030;
+}
+
+.btn {
+    background-color: #97B9D6 !important;
+    color: #104380 !important; 
+    font-family: 'VT323', monospace; 
+    font-size: 1.2em;
+}
+
+.btn:hover {
+    background-color: #104380 !important; 
+    color: #FCD688 !important; 
+}

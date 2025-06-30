@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Fruta Antiga",
+    "price": 550,
+    "image": "1.png",
+    "category": "especiais"
+  },
+  {
+    "id": 2,
+    "name": "Fruto do Cacto",
+    "price": 75,
+    "image": "2.png",
+    "category": "verao"
+  },
+  {
+    "id": 3,
+    "name": "Fibra",
+    "price": 10,
+    "image": "3.png",
+    "category": "primavera"
+  },
+  {
+    "id": 4,
+    "name": "Abacaxi",
+    "price": 300,
+    "image": "4.png",
+    "category": "verao"
+  },
+  {
+    "id": 5,
+    "name": "Cereja de Joia Doce",
+    "price": 3000,
+    "image": "5.png",
+    "category": "especiais"
+  },
+  {
+    "id": 6,
+    "name": "Raiz de Taro",
+    "price": 600,
+    "image": "6.png",
+    "category": "verao"
+  },
+  {
+    "id": 7,
+    "name": "Folhas de Chá",
+    "price": 50,
+    "image": "7.png",
+    "category": "primavera"
+  },
+  {
+    "id": 8,
+    "name": "Rosa-de-fada",
+    "price": 290,
+    "image": "8.png",
+    "category": "outono"
+  },
+  {
+    "id": 9,
+    "name": "Amaranto",
+    "price": 150,
+    "image": "9.png",
+    "category": "outono"
+  },
+  {
+    "id": 10,
+    "name": "Oxicoco",
+    "price": 75,
+    "image": "10.png",
+    "category": "inverno"
+  }
+]

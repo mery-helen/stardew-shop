@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="center-align">Carrinho de Compras</h3>
+
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Itens no Carrinho</span>
+              <div id="cart-items-list">
+                <p id="empty-cart-message" style="text-align: center; color: #B66C3F; margin-top: 20px;">Seu carrinho está vazio. Adicione alguns itens!</p>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="section">
+                <h5>
+                  Valor Total:
+                  <span id="total-value">0</span>
+                  <span class="total-unit">Ouros</span>
+                </h5>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="section">
+                <h5>Endereço de Entrega</h5>
+                <div class="input-field">
+                  <textarea
+                    id="delivery-address"
+                    class="materialize-textarea validate"
+                    required
+                    minlength="10"
+                    maxlength="200"
+                  ></textarea>
+                  <label for="delivery-address"
+                    >Insira seu endereço completo</label
+                  >
+                  <span class="helper-text" data-error="Endereço inválido" data-success="Ok"></span>
+                </div>
+              </div>
+
+              <div class="card-action center-align">
+                <button
+                  class="btn waves-effect waves-light"
+                  id="finalize-purchase"
+                >
+                  Finalizar Compra
+                  <i class="material-icons right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
